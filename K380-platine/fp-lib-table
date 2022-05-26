@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "SparkFun MicroMod")(type Eagle)(uri ${KIPRJMOD}/lib/SparkFun-MicroMod.lbr)(options "")(descr ""))
+)
