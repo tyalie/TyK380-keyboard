@@ -47,17 +47,6 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf" H 5900 9600 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x02 J1
-U 1 1 62903AF0
-P 5400 6000
-F 0 "J1" V 5272 6080 50  0000 L CNN
-F 1 "JST-PH 2" V 5363 6080 50  0000 L CNN
-F 2 "Connector_JST:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal" H 5400 6000 50  0001 C CNN
-F 3 "~" H 5400 6000 50  0001 C CNN
-	1    5400 6000
-	0    1    1    0   
-$EndComp
-$Comp
 L Connector_Generic:Conn_01x23 J2
 U 1 1 62906B4C
 P 7650 6100
@@ -314,8 +303,6 @@ Text GLabel 6600 10250 3    59   Input ~ 0
 CStat
 Text Notes 5650 8300 0    79   ~ 0
 LIPO Charging
-Wire Notes Line
-	500  7950 7850 7950
 Wire Wire Line
 	6450 9750 6600 9750
 Wire Wire Line
@@ -330,32 +317,163 @@ Wire Notes Line
 $Comp
 L power:GND #PWR?
 U 1 1 62947FF0
-P 9050 10450
-F 0 "#PWR?" H 9050 10200 50  0001 C CNN
-F 1 "GND" H 9055 10277 50  0000 C CNN
-F 2 "" H 9050 10450 50  0001 C CNN
-F 3 "" H 9050 10450 50  0001 C CNN
-	1    9050 10450
+P 8650 10750
+F 0 "#PWR?" H 8650 10500 50  0001 C CNN
+F 1 "GND" H 8655 10577 50  0000 C CNN
+F 2 "" H 8650 10750 50  0001 C CNN
+F 3 "" H 8650 10750 50  0001 C CNN
+	1    8650 10750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9050 10450 9050 10400
-Wire Wire Line
-	8750 10350 8750 10400
-Wire Wire Line
-	8750 10400 9050 10400
-Connection ~ 9050 10400
-Wire Wire Line
-	9050 10400 9050 10350
 $Comp
 L Connector:USB_C_Receptacle_USB2.0 J?
 U 1 1 62949AC6
-P 9050 9450
-F 0 "J?" H 9157 10317 50  0000 C CNN
-F 1 "USB_C_Receptacle_USB2.0" H 9157 10226 50  0000 C CNN
-F 2 "" H 9200 9450 50  0001 C CNN
-F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 9200 9450 50  0001 C CNN
-	1    9050 9450
+P 8650 9750
+F 0 "J?" H 8757 10617 50  0000 C CNN
+F 1 "USB_C_Receptacle_USB2.0" H 8757 10526 50  0000 C CNN
+F 2 "" H 8800 9750 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 8800 9750 50  0001 C CNN
+	1    8650 9750
 	1    0    0    -1  
+$EndComp
+Text GLabel 9450 9150 2    59   Input ~ 0
+VUSB
+$Comp
+L power:GND #PWR?
+U 1 1 6295443F
+P 9350 8750
+F 0 "#PWR?" H 9350 8500 50  0001 C CNN
+F 1 "GND" H 9355 8577 50  0000 C CNN
+F 2 "" H 9350 8750 50  0001 C CNN
+F 3 "" H 9350 8750 50  0001 C CNN
+	1    9350 8750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 62955F4D
+P 9350 8950
+F 0 "D?" V 9304 9030 50  0000 L CNN
+F 1 "TVS 5V" V 9395 9030 50  0000 L CNN
+F 2 "" H 9350 8950 50  0001 C CNN
+F 3 "~" H 9350 8950 50  0001 C CNN
+	1    9350 8950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8650 10650 8650 10700
+$Comp
+L Device:R R?
+U 1 1 62957FD7
+P 8500 10700
+F 0 "R?" V 8293 10700 50  0000 C CNN
+F 1 "1M" V 8384 10700 50  0000 C CNN
+F 2 "" V 8430 10700 50  0001 C CNN
+F 3 "~" H 8500 10700 50  0001 C CNN
+	1    8500 10700
+	0    1    1    0   
+$EndComp
+Connection ~ 8650 10700
+Wire Wire Line
+	8650 10700 8650 10750
+Wire Wire Line
+	8350 10700 8350 10650
+$Comp
+L Device:R R?
+U 1 1 62959392
+P 9850 9350
+F 0 "R?" V 9643 9350 50  0000 C CNN
+F 1 "5.1k 20%" V 9734 9350 50  0000 C CNN
+F 2 "" V 9780 9350 50  0001 C CNN
+F 3 "~" H 9850 9350 50  0001 C CNN
+	1    9850 9350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 62959A27
+P 9850 9450
+F 0 "R?" V 10050 9450 50  0000 C CNN
+F 1 "5.1k 20%" V 9950 9450 50  0000 C CNN
+F 2 "" V 9780 9450 50  0001 C CNN
+F 3 "~" H 9850 9450 50  0001 C CNN
+	1    9850 9450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6295B4CE
+P 10050 9400
+F 0 "#PWR?" H 10050 9150 50  0001 C CNN
+F 1 "GND" V 10055 9272 50  0000 R CNN
+F 2 "" H 10050 9400 50  0001 C CNN
+F 3 "" H 10050 9400 50  0001 C CNN
+	1    10050 9400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10000 9350 10050 9350
+Wire Wire Line
+	10050 9450 10000 9450
+Wire Wire Line
+	9250 9350 9700 9350
+Wire Wire Line
+	9250 9450 9700 9450
+Wire Wire Line
+	9350 8800 9350 8750
+Wire Wire Line
+	9250 9150 9350 9150
+Wire Wire Line
+	9350 9150 9350 9100
+Connection ~ 9350 9150
+Wire Wire Line
+	9350 9150 9450 9150
+Wire Wire Line
+	10050 9350 10050 9400
+Connection ~ 10050 9400
+Wire Wire Line
+	10050 9400 10050 9450
+Text GLabel 9400 9700 2    59   Input ~ 0
+D-
+Text GLabel 9400 9900 2    59   Input ~ 0
+D+
+Wire Wire Line
+	9250 9950 9350 9950
+Wire Wire Line
+	9250 9850 9350 9850
+Wire Wire Line
+	9250 9750 9350 9750
+Wire Wire Line
+	9250 9650 9350 9650
+Wire Wire Line
+	9350 9650 9350 9700
+Wire Wire Line
+	9350 9850 9350 9900
+Wire Wire Line
+	9350 9700 9400 9700
+Connection ~ 9350 9700
+Wire Wire Line
+	9350 9700 9350 9750
+Wire Wire Line
+	9350 9900 9400 9900
+Connection ~ 9350 9900
+Wire Wire Line
+	9350 9900 9350 9950
+Text Notes 8850 8300 0    79   ~ 0
+USB Port
+Wire Notes Line
+	10750 7950 10750 11250
+Wire Notes Line
+	500  7950 10750 7950
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 62903AF0
+P 1150 6450
+F 0 "J1" V 1022 6530 50  0000 L CNN
+F 1 "JST-PH 2" V 1113 6530 50  0000 L CNN
+F 2 "Connector_JST:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal" H 1150 6450 50  0001 C CNN
+F 3 "~" H 1150 6450 50  0001 C CNN
+	1    1150 6450
+	-1   0    0    1   
 $EndComp
 $EndSCHEMATC
