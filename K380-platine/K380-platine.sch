@@ -975,21 +975,17 @@ DLED
 Text GLabel 4200 3700 0    39   Input ~ 0
 CSTAT
 Text GLabel 5800 4150 2    39   Output ~ 0
-ROW1
-Text GLabel 4200 4100 0    39   Output ~ 0
-ROW2
-Text GLabel 4200 3900 0    39   Output ~ 0
-ROW3
-Text GLabel 4200 4900 0    39   Output ~ 0
-ROW4
-Text GLabel 5800 3650 2    39   Output ~ 0
-ROW5
-Text GLabel 5800 3750 2    39   Output ~ 0
-ROW6
-Text GLabel 5800 3050 2    39   Output ~ 0
-ROW7
-Text GLabel 5800 5050 2    39   Output ~ 0
 ROW8
+Text GLabel 4200 4900 0    39   Output ~ 0
+ROW5
+Text GLabel 5800 3650 2    39   Output ~ 0
+ROW4
+Text GLabel 5800 3750 2    39   Output ~ 0
+ROW3
+Text GLabel 5800 3050 2    39   Output ~ 0
+ROW2
+Text GLabel 5800 5050 2    39   Output ~ 0
+ROW1
 Text GLabel 5800 4650 2    39   Input ~ 0
 COL1
 Text GLabel 5800 3550 2    39   Input ~ 0
@@ -1118,4 +1114,8 @@ Wire Wire Line
 	5600 3050 5800 3050
 Wire Wire Line
 	5800 4550 5600 4550
+Text GLabel 4200 4100 0    39   Output ~ 0
+ROW7
+Text GLabel 4200 3900 0    39   Output ~ 0
+ROW6
 $EndSCHEMATC
