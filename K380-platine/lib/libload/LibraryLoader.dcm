@@ -4,6 +4,11 @@ D E-SWITCH - EG1215AA - SLIDE SWITCH, SPDT, 0.025A, 24V, SMD
 K
 F http://www.mouser.cn/datasheet/2/140/EG1215-1487830.pdf
 $ENDCMP
+$CMP MJTP1140AAUTR
+D Multi-Directional Switches Tact Switch
+K
+F https://www.mouser.com/datasheet/2/26/MJTP_6MM_4MM_SMD-221741.pdf
+$ENDCMP
 $CMP WS2812_2020
 D Intelligent control LED
 K
