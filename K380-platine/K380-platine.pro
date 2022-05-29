@@ -1,4 +1,4 @@
-update=Thu May 26 18:56:57 2022
+update=Sun 29 May 2022 14:37:21 CEST
 version=1
 last_client=kicad
 [general]
@@ -33,11 +33,11 @@ LibDir=
 [eeschema/libraries]
 [schematic_editor]
 version=1
-PageLayoutDescrFile=
+PageLayoutDescrFile=lib/better-layout.kicad_wks
 PlotDirectoryName=
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=Pcbnew
 SpiceAjustPassiveValues=0
-LabSize=50
+LabSize=79
 ERC_TestSimilarLabels=1
