@@ -4,3 +4,8 @@ D E-SWITCH - EG1215AA - SLIDE SWITCH, SPDT, 0.025A, 24V, SMD
 K
 F http://www.mouser.cn/datasheet/2/140/EG1215-1487830.pdf
 $ENDCMP
+$CMP WS2812_2020
+D Intelligent control LED
+K
+F https://www.smart-prototyping.com/image/data/2_components/Light/101967%20ws2812-2020/WS2812-2020_EN_18062112183733.pdf
+$ENDCMP
