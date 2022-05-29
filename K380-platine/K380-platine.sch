@@ -289,7 +289,7 @@ Wire Wire Line
 Wire Wire Line
 	6900 10200 6900 9950
 Text GLabel 6600 10250 3    59   Input ~ 0
-CStat
+CSTAT
 Text Notes 5650 8300 0    79   ~ 0
 LIPO Charging
 Wire Wire Line
@@ -970,7 +970,7 @@ Wire Wire Line
 	4400 3400 4200 3400
 Text GLabel 5800 4950 2    39   Input ~ 0
 VDIV
-Text GLabel 4200 3600 0    39   Output ~ 0
+Text GLabel 5800 4550 2    39   Output ~ 0
 DLED
 Text GLabel 4200 3700 0    39   Input ~ 0
 CSTAT
@@ -1067,8 +1067,6 @@ Wire Wire Line
 Wire Wire Line
 	8650 10650 8650 10750
 Wire Wire Line
-	4200 3600 4400 3600
-Wire Wire Line
 	4400 3700 4200 3700
 Wire Wire Line
 	4200 3900 4400 3900
@@ -1118,4 +1116,6 @@ Wire Wire Line
 	5800 3150 5600 3150
 Wire Wire Line
 	5600 3050 5800 3050
+Wire Wire Line
+	5800 4550 5600 4550
 $EndSCHEMATC
