@@ -448,7 +448,7 @@ F 3 "" H 11750 9950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Q_NMOS_DGS Q2
+L Device:Q_NMOS_DSG Q2
 U 1 1 62992380
 P 1750 9150
 F 0 "Q2" H 1955 9104 50  0000 L CNN
