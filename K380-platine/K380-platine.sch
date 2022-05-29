@@ -349,24 +349,6 @@ F 3 "~" H 9350 8950 50  0001 C CNN
 	1    9350 8950
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	8650 10650 8650 10700
-$Comp
-L Device:R R4
-U 1 1 62957FD7
-P 8500 10700
-F 0 "R4" V 8293 10700 50  0000 C CNN
-F 1 "1M" V 8384 10700 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 8430 10700 50  0001 C CNN
-F 3 "~" H 8500 10700 50  0001 C CNN
-	1    8500 10700
-	0    1    1    0   
-$EndComp
-Connection ~ 8650 10700
-Wire Wire Line
-	8650 10700 8650 10750
-Wire Wire Line
-	8350 10700 8350 10650
 $Comp
 L Device:R R5
 U 1 1 62959392
@@ -986,110 +968,58 @@ Wire Wire Line
 	4200 3300 4400 3300
 Wire Wire Line
 	4400 3400 4200 3400
-Text GLabel 5800 3050 2    39   Input ~ 0
+Text GLabel 5800 4950 2    39   Input ~ 0
 VDIV
-Wire Wire Line
-	5800 3050 5600 3050
 Text GLabel 4200 3600 0    39   Output ~ 0
 DLED
-Wire Wire Line
-	4400 3600 4200 3600
 Text GLabel 4200 3700 0    39   Input ~ 0
 CSTAT
-Wire Wire Line
-	4200 3700 4400 3700
-Text GLabel 4200 3900 0    39   Output ~ 0
+Text GLabel 5800 4150 2    39   Output ~ 0
 ROW1
-Text GLabel 4200 4000 0    39   Output ~ 0
-ROW2
 Text GLabel 4200 4100 0    39   Output ~ 0
+ROW2
+Text GLabel 4200 3900 0    39   Output ~ 0
 ROW3
-Text GLabel 4200 4200 0    39   Output ~ 0
+Text GLabel 4200 4900 0    39   Output ~ 0
 ROW4
-Text GLabel 4200 4300 0    39   Output ~ 0
+Text GLabel 5800 3650 2    39   Output ~ 0
 ROW5
-Text GLabel 4200 4400 0    39   Output ~ 0
+Text GLabel 5800 3750 2    39   Output ~ 0
 ROW6
-Text GLabel 4200 4500 0    39   Output ~ 0
+Text GLabel 5800 3050 2    39   Output ~ 0
 ROW7
-Text GLabel 4200 4600 0    39   Output ~ 0
+Text GLabel 5800 5050 2    39   Output ~ 0
 ROW8
-Wire Wire Line
-	4200 3900 4400 3900
-Wire Wire Line
-	4400 4000 4200 4000
-Wire Wire Line
-	4200 4100 4400 4100
-Wire Wire Line
-	4400 4200 4200 4200
-Wire Wire Line
-	4200 4300 4400 4300
-Wire Wire Line
-	4400 4400 4200 4400
-Wire Wire Line
-	4200 4500 4400 4500
-Wire Wire Line
-	4400 4600 4200 4600
-Text GLabel 5800 3450 2    39   Input ~ 0
+Text GLabel 5800 4650 2    39   Input ~ 0
 COL1
 Text GLabel 5800 3550 2    39   Input ~ 0
 COL2
-Text GLabel 5800 3650 2    39   Input ~ 0
-COL3
-Text GLabel 5800 3750 2    39   Input ~ 0
-COL4
 Text GLabel 5800 3850 2    39   Input ~ 0
-COL5
+COL3
 Text GLabel 5800 3950 2    39   Input ~ 0
+COL4
+Text GLabel 4200 4300 0    39   Input ~ 0
+COL5
+Text GLabel 4200 4000 0    39   Input ~ 0
 COL6
-Text GLabel 5800 4050 2    39   Input ~ 0
+Text GLabel 4200 4200 0    39   Input ~ 0
 COL7
-Text GLabel 5800 4150 2    39   Input ~ 0
+Text GLabel 5800 3450 2    39   Input ~ 0
 COL8
-Text GLabel 5800 4250 2    39   Input ~ 0
+Text GLabel 5800 3250 2    39   Input ~ 0
 COL9
-Text GLabel 5800 4350 2    39   Input ~ 0
+Text GLabel 5800 3350 2    39   Input ~ 0
 COL10
-Text GLabel 5800 4450 2    39   Input ~ 0
-COL11
-Text GLabel 5800 4550 2    39   Input ~ 0
-COL12
-Text GLabel 5800 4650 2    39   Input ~ 0
-COL13
-Text GLabel 5800 4750 2    39   Input ~ 0
-COL14
 Text GLabel 5800 4850 2    39   Input ~ 0
+COL11
+Text GLabel 5800 3150 2    39   Input ~ 0
+COL12
+Text GLabel 4200 4800 0    39   Input ~ 0
+COL13
+Text GLabel 4200 4700 0    39   Input ~ 0
+COL14
+Text GLabel 4200 4600 0    39   Input ~ 0
 COL15
-Wire Wire Line
-	5600 3450 5800 3450
-Wire Wire Line
-	5800 3550 5600 3550
-Wire Wire Line
-	5600 3650 5800 3650
-Wire Wire Line
-	5800 3750 5600 3750
-Wire Wire Line
-	5600 3850 5800 3850
-Wire Wire Line
-	5800 3950 5600 3950
-Wire Wire Line
-	5600 4050 5800 4050
-Wire Wire Line
-	5800 4150 5600 4150
-Wire Wire Line
-	5600 4250 5800 4250
-Wire Wire Line
-	5800 4350 5600 4350
-Wire Wire Line
-	5600 4450 5800 4450
-Wire Wire Line
-	5600 4550 5800 4550
-Wire Wire Line
-	5800 4650 5600 4650
-Wire Wire Line
-	5600 4750 5800 4750
-Wire Wire Line
-	5800 4850 5600 4850
 $Comp
 L power:GND #PWR011
 U 1 1 62B9D125
@@ -1134,4 +1064,58 @@ Wire Wire Line
 Connection ~ 5100 5500
 Wire Wire Line
 	5100 5500 5200 5500
+Wire Wire Line
+	8650 10650 8650 10750
+Wire Wire Line
+	4200 3600 4400 3600
+Wire Wire Line
+	4400 3700 4200 3700
+Wire Wire Line
+	4200 3900 4400 3900
+Wire Wire Line
+	4400 4000 4200 4000
+Wire Wire Line
+	4200 4100 4400 4100
+Wire Wire Line
+	4400 4200 4200 4200
+Wire Wire Line
+	4200 4300 4400 4300
+Wire Wire Line
+	4400 4600 4200 4600
+Wire Wire Line
+	4200 4700 4400 4700
+Wire Wire Line
+	4400 4800 4200 4800
+Wire Wire Line
+	4200 4900 4400 4900
+Wire Wire Line
+	5600 5050 5800 5050
+Wire Wire Line
+	5800 4950 5600 4950
+Wire Wire Line
+	5600 4850 5800 4850
+Wire Wire Line
+	5800 4650 5600 4650
+Wire Wire Line
+	5600 4150 5800 4150
+Wire Wire Line
+	5800 3950 5600 3950
+Wire Wire Line
+	5600 3850 5800 3850
+Wire Wire Line
+	5800 3750 5600 3750
+Wire Wire Line
+	5600 3650 5800 3650
+Wire Wire Line
+	5800 3550 5600 3550
+Wire Wire Line
+	5600 3450 5800 3450
+Wire Wire Line
+	5800 3350 5600 3350
+Wire Wire Line
+	5600 3250 5800 3250
+Wire Wire Line
+	5800 3150 5600 3150
+Wire Wire Line
+	5600 3050 5800 3050
 $EndSCHEMATC
