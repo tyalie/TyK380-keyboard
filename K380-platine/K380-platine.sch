@@ -47,25 +47,14 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf" H 5900 9600 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x23 J2
-U 1 1 62906B4C
-P 6800 2050
-F 0 "J2" V 6925 2046 50  0000 C CNN
-F 1 "Conn_01x23" V 7016 2046 50  0000 C CNN
-F 2 "Connector_FFC-FPC:TE_2-84952-3_1x23-1MP_P1.0mm_Horizontal" H 6800 2050 50  0001 C CNN
-F 3 "~" H 6800 2050 50  0001 C CNN
-	1    6800 2050
-	0    1    1    0   
-$EndComp
-$Comp
 L custom_footprints:MicroMod-M.2E J3
 U 1 1 62919FF9
-P 2750 1100
-F 0 "J3" H 2700 1365 50  0000 C CNN
-F 1 "MicroMod-M.2E" H 2700 1274 50  0000 C CNN
-F 2 "SparkFun MicroMod:M.2-CONNECTOR-E" H 2750 1100 50  0001 C CNN
-F 3 "" H 2750 1100 50  0001 C CNN
-	1    2750 1100
+P 5050 2350
+F 0 "J3" H 5000 2615 50  0000 C CNN
+F 1 "MicroMod-M.2E" H 5000 2524 50  0000 C CNN
+F 2 "SparkFun MicroMod:M.2-CONNECTOR-E" H 5050 2350 50  0001 C CNN
+F 3 "" H 5050 2350 50  0001 C CNN
+	1    5050 2350
 	1    0    0    -1  
 $EndComp
 Text GLabel 1150 9350 1    50   Input ~ 0
@@ -433,9 +422,9 @@ Wire Wire Line
 Connection ~ 10050 9400
 Wire Wire Line
 	10050 9400 10050 9450
-Text GLabel 9400 9700 2    59   Input ~ 0
+Text GLabel 9400 9700 2    59   BiDi ~ 0
 D-
-Text GLabel 9400 9900 2    59   Input ~ 0
+Text GLabel 9400 9900 2    59   BiDi ~ 0
 D+
 Wire Wire Line
 	9250 9950 9350 9950
@@ -644,7 +633,7 @@ F 3 "~" H 14300 10250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 14700 10050 2    79   Input ~ 0
-SWITCH
+BOOT
 Wire Wire Line
 	14000 10150 14000 10050
 Wire Wire Line
@@ -773,7 +762,376 @@ Wire Wire Line
 Text Notes 13500 4900 0    79   ~ 0
 Status LEDs
 Wire Notes Line
-	11600 7950 11600 4550
-Wire Notes Line
 	11600 4550 16050 4550
+Text GLabel 13000 1350 0    79   Input ~ 0
+V3.3
+$Comp
+L Device:C C?
+U 1 1 62A35720
+P 13300 1500
+F 0 "C?" H 13415 1546 50  0000 L CNN
+F 1 "10uF" H 13415 1455 50  0000 L CNN
+F 2 "" H 13338 1350 50  0001 C CNN
+F 3 "~" H 13300 1500 50  0001 C CNN
+	1    13300 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 62A35CBD
+P 13850 1500
+F 0 "C?" H 13965 1546 50  0000 L CNN
+F 1 "0.1uF" H 13965 1455 50  0000 L CNN
+F 2 "" H 13888 1350 50  0001 C CNN
+F 3 "~" H 13850 1500 50  0001 C CNN
+	1    13850 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 62A35E6F
+P 14400 1500
+F 0 "C?" H 14515 1546 50  0000 L CNN
+F 1 "0.1uF" H 14515 1455 50  0000 L CNN
+F 2 "" H 14438 1350 50  0001 C CNN
+F 3 "~" H 14400 1500 50  0001 C CNN
+	1    14400 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13000 1350 13300 1350
+Connection ~ 13300 1350
+Wire Wire Line
+	13300 1350 13850 1350
+Connection ~ 13850 1350
+Wire Wire Line
+	13850 1350 14400 1350
+Wire Wire Line
+	13300 1650 13850 1650
+Connection ~ 13850 1650
+Wire Wire Line
+	13850 1650 14400 1650
+$Comp
+L power:GND #PWR?
+U 1 1 62A3EF82
+P 13850 1750
+F 0 "#PWR?" H 13850 1500 50  0001 C CNN
+F 1 "GND" H 13855 1577 50  0000 C CNN
+F 2 "" H 13850 1750 50  0001 C CNN
+F 3 "" H 13850 1750 50  0001 C CNN
+	1    13850 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13850 1750 13850 1650
+Text GLabel 14900 3550 1    39   Output ~ 0
+COL15
+Text GLabel 14800 3550 1    39   Output ~ 0
+COL14
+Text GLabel 14700 3550 1    39   Output ~ 0
+COL13
+Text GLabel 14600 3550 1    39   Output ~ 0
+COL12
+Text GLabel 14500 3550 1    39   Output ~ 0
+COL11
+Text GLabel 14400 3550 1    39   Output ~ 0
+COL10
+Text GLabel 14300 3550 1    39   Output ~ 0
+COL9
+Text GLabel 14200 3550 1    39   Output ~ 0
+COL8
+Text GLabel 14100 3550 1    39   Output ~ 0
+COL7
+Text GLabel 14000 3550 1    39   Output ~ 0
+COL6
+Text GLabel 13900 3550 1    39   Output ~ 0
+COL5
+Text GLabel 13800 3550 1    39   Output ~ 0
+COL4
+Text GLabel 13700 3550 1    39   Output ~ 0
+COL3
+Text GLabel 13600 3550 1    39   Output ~ 0
+COL2
+Text GLabel 13500 3550 1    39   Input ~ 0
+ROW8
+Text GLabel 13400 3550 1    39   Input ~ 0
+ROW7
+Text GLabel 13300 3550 1    39   Input ~ 0
+ROW6
+Text GLabel 13200 3550 1    39   Input ~ 0
+ROW5
+Text GLabel 13100 3550 1    39   Input ~ 0
+ROW4
+Text GLabel 12900 3550 1    39   Input ~ 0
+ROW2
+Text GLabel 13000 3550 1    39   Input ~ 0
+ROW3
+Text GLabel 12800 3550 1    39   Input ~ 0
+ROW1
+Text GLabel 12700 3550 1    39   Output ~ 0
+COL1
+$Comp
+L Connector_Generic:Conn_01x23 J2
+U 1 1 62906B4C
+P 13800 3750
+F 0 "J2" V 13925 3746 50  0000 C CNN
+F 1 "Conn_01x23" V 14016 3746 50  0000 C CNN
+F 2 "Connector_FFC-FPC:TE_2-84952-3_1x23-1MP_P1.0mm_Horizontal" H 13800 3750 50  0001 C CNN
+F 3 "~" H 13800 3750 50  0001 C CNN
+	1    13800 3750
+	0    -1   1    0   
+$EndComp
+Text Notes 14300 2950 2    79   ~ 0
+Keyboard Matrix
+Text Notes 14300 850  2    79   ~ 0
+Decoupling Caps
+Wire Notes Line
+	11600 500  11600 7950
+Wire Notes Line
+	11600 2400 16050 2400
+Text GLabel 4250 2200 1    39   Output ~ 0
+V3.3
+Wire Wire Line
+	4400 2450 4250 2450
+Connection ~ 4250 2450
+Wire Wire Line
+	4250 2450 4250 2350
+Wire Wire Line
+	4400 2350 4250 2350
+Connection ~ 4250 2350
+Wire Wire Line
+	4250 2350 4250 2200
+Wire Wire Line
+	4400 2550 4250 2550
+Wire Wire Line
+	4250 2450 4250 2550
+Text GLabel 4200 2650 0    39   Output ~ 0
+RESET
+Wire Wire Line
+	4200 2650 4400 2650
+Text GLabel 4200 3000 0    39   BiDi ~ 0
+D-
+Wire Wire Line
+	4200 3000 4400 3000
+Text GLabel 4200 3100 0    39   BiDi ~ 0
+D+
+Wire Wire Line
+	4200 3100 4400 3100
+Text GLabel 4200 2900 0    39   Input ~ 0
+VUSB
+Wire Wire Line
+	4200 2900 4400 2900
+Text GLabel 4200 2750 0    39   Output ~ 0
+BOOT
+Wire Wire Line
+	4200 2750 4400 2750
+$Comp
+L Connector:Conn_ARM_JTAG_SWD_10 J?
+U 1 1 62AB1718
+P 10200 6850
+F 0 "J?" V 9650 7350 50  0000 R CNN
+F 1 "Conn_ARM_JTAG_SWD_10" V 9750 7350 50  0000 R CNN
+F 2 "" H 10200 6850 50  0001 C CNN
+F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf" V 9850 5600 50  0001 C CNN
+	1    10200 6850
+	1    0    0    -1  
+$EndComp
+Text GLabel 10850 6550 2    39   Input ~ 0
+RESET
+Text GLabel 10850 6850 2    39   BiDi ~ 0
+SWDIO
+Text GLabel 10850 6750 2    39   Output ~ 0
+SWDCLK
+$Comp
+L power:GND #PWR?
+U 1 1 62AB49D1
+P 10200 7550
+F 0 "#PWR?" H 10200 7300 50  0001 C CNN
+F 1 "GND" H 10205 7377 50  0000 C CNN
+F 2 "" H 10200 7550 50  0001 C CNN
+F 3 "" H 10200 7550 50  0001 C CNN
+	1    10200 7550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10700 6550 10850 6550
+Wire Wire Line
+	10700 6750 10850 6750
+Wire Wire Line
+	10850 6850 10700 6850
+Wire Wire Line
+	10200 7550 10200 7500
+Text GLabel 10200 6100 1    39   Input ~ 0
+V3.3
+Wire Wire Line
+	10200 6250 10200 6100
+Wire Wire Line
+	10100 7450 10100 7500
+Wire Wire Line
+	10100 7500 10200 7500
+Connection ~ 10200 7500
+Wire Wire Line
+	10200 7500 10200 7450
+Text Notes 10700 5550 2    79   ~ 0
+SWD Debugger
+Wire Notes Line
+	11600 5200 9050 5200
+Wire Notes Line
+	9050 5200 9050 7950
+Text GLabel 4200 3400 0    39   Input ~ 0
+SWDCLK
+Text GLabel 4200 3300 0    39   BiDi ~ 0
+SWDIO
+Wire Wire Line
+	4200 3300 4400 3300
+Wire Wire Line
+	4400 3400 4200 3400
+Text GLabel 5800 3050 2    39   Input ~ 0
+VDIV
+Wire Wire Line
+	5800 3050 5600 3050
+Text GLabel 4200 3600 0    39   Output ~ 0
+DLED
+Wire Wire Line
+	4400 3600 4200 3600
+Text GLabel 4200 3700 0    39   Input ~ 0
+CSTAT
+Wire Wire Line
+	4200 3700 4400 3700
+Text GLabel 4200 3900 0    39   Output ~ 0
+ROW1
+Text GLabel 4200 4000 0    39   Output ~ 0
+ROW2
+Text GLabel 4200 4100 0    39   Output ~ 0
+ROW3
+Text GLabel 4200 4200 0    39   Output ~ 0
+ROW4
+Text GLabel 4200 4300 0    39   Output ~ 0
+ROW5
+Text GLabel 4200 4400 0    39   Output ~ 0
+ROW6
+Text GLabel 4200 4500 0    39   Output ~ 0
+ROW7
+Text GLabel 4200 4600 0    39   Output ~ 0
+ROW8
+Wire Wire Line
+	4200 3900 4400 3900
+Wire Wire Line
+	4400 4000 4200 4000
+Wire Wire Line
+	4200 4100 4400 4100
+Wire Wire Line
+	4400 4200 4200 4200
+Wire Wire Line
+	4200 4300 4400 4300
+Wire Wire Line
+	4400 4400 4200 4400
+Wire Wire Line
+	4200 4500 4400 4500
+Wire Wire Line
+	4400 4600 4200 4600
+Text GLabel 5800 3450 2    39   Input ~ 0
+COL1
+Text GLabel 5800 3550 2    39   Input ~ 0
+COL2
+Text GLabel 5800 3650 2    39   Input ~ 0
+COL3
+Text GLabel 5800 3750 2    39   Input ~ 0
+COL4
+Text GLabel 5800 3850 2    39   Input ~ 0
+COL5
+Text GLabel 5800 3950 2    39   Input ~ 0
+COL6
+Text GLabel 5800 4050 2    39   Input ~ 0
+COL7
+Text GLabel 5800 4150 2    39   Input ~ 0
+COL8
+Text GLabel 5800 4250 2    39   Input ~ 0
+COL9
+Text GLabel 5800 4350 2    39   Input ~ 0
+COL10
+Text GLabel 5800 4450 2    39   Input ~ 0
+COL11
+Text GLabel 5800 4550 2    39   Input ~ 0
+COL12
+Text GLabel 5800 4650 2    39   Input ~ 0
+COL13
+Text GLabel 5800 4750 2    39   Input ~ 0
+COL14
+Text GLabel 5800 4850 2    39   Input ~ 0
+COL15
+Wire Wire Line
+	5600 3450 5800 3450
+Wire Wire Line
+	5800 3550 5600 3550
+Wire Wire Line
+	5600 3650 5800 3650
+Wire Wire Line
+	5800 3750 5600 3750
+Wire Wire Line
+	5600 3850 5800 3850
+Wire Wire Line
+	5800 3950 5600 3950
+Wire Wire Line
+	5600 4050 5800 4050
+Wire Wire Line
+	5800 4150 5600 4150
+Wire Wire Line
+	5600 4250 5800 4250
+Wire Wire Line
+	5800 4350 5600 4350
+Wire Wire Line
+	5600 4450 5800 4450
+Wire Wire Line
+	5600 4550 5800 4550
+Wire Wire Line
+	5800 4650 5600 4650
+Wire Wire Line
+	5600 4750 5800 4750
+Wire Wire Line
+	5800 4850 5600 4850
+$Comp
+L power:GND #PWR?
+U 1 1 62B9D125
+P 5000 5600
+F 0 "#PWR?" H 5000 5350 50  0001 C CNN
+F 1 "GND" H 5005 5427 50  0000 C CNN
+F 2 "" H 5000 5600 50  0001 C CNN
+F 3 "" H 5000 5600 50  0001 C CNN
+	1    5000 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 5450 4700 5500
+Wire Wire Line
+	4700 5500 4800 5500
+Wire Wire Line
+	5000 5500 5000 5600
+Wire Wire Line
+	4800 5500 4800 5450
+Connection ~ 4800 5500
+Wire Wire Line
+	4800 5500 4900 5500
+Wire Wire Line
+	4900 5500 4900 5450
+Connection ~ 4900 5500
+Wire Wire Line
+	4900 5500 5000 5500
+Wire Wire Line
+	5000 5500 5000 5450
+Connection ~ 5000 5500
+Wire Wire Line
+	5000 5500 5100 5500
+Wire Wire Line
+	5300 5500 5300 5450
+Wire Wire Line
+	5200 5500 5200 5450
+Connection ~ 5200 5500
+Wire Wire Line
+	5200 5500 5300 5500
+Wire Wire Line
+	5100 5500 5100 5450
+Connection ~ 5100 5500
+Wire Wire Line
+	5100 5500 5200 5500
 $EndSCHEMATC
