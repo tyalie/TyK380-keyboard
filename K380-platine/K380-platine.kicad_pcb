@@ -388,15 +388,15 @@
     (descr "Mounting Hole 3.2mm, M3, DIN965")
     (tags "mounting hole 3.2mm m3 din965")
     (attr virtual)
-    (fp_text reference REF** (at 0 -3.8) (layer F.SilkS)
+    (fp_text reference REF** (at 0 -3.8) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value MountingHole_3.2mm_M3_DIN965_Pad (at 0 3.8) (layer F.Fab)
+    (fp_text value MountingHole_3.2mm_M3_DIN965_Pad (at 0 3.8) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_circle (center 0 0) (end 3.05 0) (layer F.CrtYd) (width 0.05))
     (fp_circle (center 0 0) (end 2.8 0) (layer Cmts.User) (width 0.15))
-    (fp_text user %R (at 0.3 0) (layer F.Fab)
+    (fp_text user %R (at 0.3 0) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (pad 1 thru_hole circle (at 0 0) (size 5.6 5.6) (drill 3.2) (layers *.Cu *.Mask))
@@ -407,13 +407,13 @@
     (descr "Mounting Hole 3.2mm, M3, DIN965")
     (tags "mounting hole 3.2mm m3 din965")
     (attr virtual)
-    (fp_text reference REF** (at 0 -3.8) (layer F.SilkS)
+    (fp_text reference REF** (at 0 -3.8) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value MountingHole_3.2mm_M3_DIN965_Pad (at 0 3.8) (layer F.Fab)
+    (fp_text value MountingHole_3.2mm_M3_DIN965_Pad (at 0 3.8) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text user %R (at 0.3 0) (layer F.Fab)
+    (fp_text user %R (at 0.3 0) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_circle (center 0 0) (end 2.8 0) (layer Cmts.User) (width 0.15))
@@ -1543,7 +1543,7 @@
     (fp_text reference J3 (at -12.06 3.55) (layer F.SilkS)
       (effects (font (size 1.27 1.27) (thickness 0.15)))
     )
-    (fp_text value MicroMod-M.2E (at 0.49 2.88 90) (layer F.SilkS)
+    (fp_text value MicroMod-M.2E (at 0.49 2.88 90) (layer F.SilkS) hide
       (effects (font (size 1.27 1.27) (thickness 0.15)))
     )
     (fp_line (start 9.5 -2.5) (end -9.5 -2.5) (layer F.Fab) (width 0.1524))
