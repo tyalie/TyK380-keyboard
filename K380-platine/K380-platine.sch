@@ -958,8 +958,6 @@ Text Notes 10700 5550 2    79   ~ 0
 SWD Debugger
 Wire Notes Line
 	11600 5200 9050 5200
-Wire Notes Line
-	9050 5200 9050 7950
 Text GLabel 4200 3400 0    39   Input ~ 0
 SWDCLK
 Text GLabel 4200 3300 0    39   BiDi ~ 0
@@ -1118,4 +1116,88 @@ Text GLabel 4200 4100 0    39   Output ~ 0
 ROW7
 Text GLabel 4200 3900 0    39   Output ~ 0
 ROW6
+$Comp
+L Connector:TestPoint_Probe GND1
+U 1 1 62ED9230
+P 10700 4400
+F 0 "GND1" H 10853 4501 50  0000 L CNN
+F 1 "T_GND" H 10853 4410 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10900 4400 50  0001 C CNN
+F 3 "~" H 10900 4400 50  0001 C CNN
+	1    10700 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint_Probe VUSB1
+U 1 1 62EDA376
+P 10700 4650
+F 0 "VUSB1" H 10853 4751 50  0000 L CNN
+F 1 "T_VUSB" H 10853 4660 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10900 4650 50  0001 C CNN
+F 3 "~" H 10900 4650 50  0001 C CNN
+	1    10700 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint_Probe V3.3
+U 1 1 62EDAC40
+P 10700 4900
+F 0 "V3.3" H 10852 5001 50  0000 L CNN
+F 1 "T_V3.3" H 10852 4910 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10900 4900 50  0001 C CNN
+F 3 "~" H 10900 4900 50  0001 C CNN
+	1    10700 4900
+	1    0    0    -1  
+$EndComp
+Text GLabel 10700 4900 0    79   Input ~ 0
+V3.3
+Text GLabel 10700 4650 0    79   Input ~ 0
+VUSB
+Text GLabel 10700 4400 0    79   Input ~ 0
+GND
+$Comp
+L Connector:TestPoint_Probe DLED1
+U 1 1 62F54153
+P 9850 4400
+F 0 "DLED1" H 10002 4501 50  0000 L CNN
+F 1 "T_DLED" H 10002 4410 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10050 4400 50  0001 C CNN
+F 3 "~" H 10050 4400 50  0001 C CNN
+	1    9850 4400
+	1    0    0    -1  
+$EndComp
+Text GLabel 9850 4400 0    79   Input ~ 0
+DLED
+$Comp
+L Connector:TestPoint_Probe VBAT1
+U 1 1 62F5DCAD
+P 9850 4650
+F 0 "VBAT1" H 10002 4751 50  0000 L CNN
+F 1 "T_VBAT" H 10002 4660 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10050 4650 50  0001 C CNN
+F 3 "~" H 10050 4650 50  0001 C CNN
+	1    9850 4650
+	1    0    0    -1  
+$EndComp
+Text GLabel 9850 4650 0    79   Input ~ 0
+VBAT
+Text GLabel 9850 4900 0    79   Input ~ 0
+CSTAT
+$Comp
+L Connector:TestPoint_Probe CSTAT1
+U 1 1 62F5F6A8
+P 9850 4900
+F 0 "CSTAT1" H 10003 5001 50  0000 L CNN
+F 1 "T_CSTAT" H 10003 4910 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10050 4900 50  0001 C CNN
+F 3 "~" H 10050 4900 50  0001 C CNN
+	1    9850 4900
+	1    0    0    -1  
+$EndComp
+Text Notes 9850 4000 0    79   ~ 0
+Debug Probes
+Wire Notes Line
+	9050 3700 11600 3700
+Wire Notes Line
+	9050 3700 9050 7950
 $EndSCHEMATC
