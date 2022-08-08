@@ -8,8 +8,8 @@
         {
             "name": "PlatformIO",
             "includePath": [
-                "/home/elizabeth/Documents/Projects/personal/K380-mod/keyboard/code/include",
-                "/home/elizabeth/Documents/Projects/personal/K380-mod/keyboard/code/src",
+                "/home/elizabeth/Documents/Projects/personal/K380-mod/keyboard/code/debug-keymatrix/include",
+                "/home/elizabeth/Documents/Projects/personal/K380-mod/keyboard/code/debug-keymatrix/src",
                 "/home/elizabeth/.platformio/packages/framework-arduino-mbed/cores/arduino",
                 "/home/elizabeth/.platformio/packages/framework-arduino-mbed/cores/arduino/api/deprecated",
                 "/home/elizabeth/.platformio/packages/framework-arduino-mbed/cores/arduino/api/deprecated-avr-comp",
@@ -56,8 +56,8 @@
             "browse": {
                 "limitSymbolsToIncludedHeaders": true,
                 "path": [
-                    "/home/elizabeth/Documents/Projects/personal/K380-mod/keyboard/code/include",
-                    "/home/elizabeth/Documents/Projects/personal/K380-mod/keyboard/code/src",
+                    "/home/elizabeth/Documents/Projects/personal/K380-mod/keyboard/code/debug-keymatrix/include",
+                    "/home/elizabeth/Documents/Projects/personal/K380-mod/keyboard/code/debug-keymatrix/src",
                     "/home/elizabeth/.platformio/packages/framework-arduino-mbed/cores/arduino",
                     "/home/elizabeth/.platformio/packages/framework-arduino-mbed/cores/arduino/api/deprecated",
                     "/home/elizabeth/.platformio/packages/framework-arduino-mbed/cores/arduino/api/deprecated-avr-comp",
@@ -103,7 +103,7 @@
                 ]
             },
             "defines": [
-                "PLATFORMIO=60002",
+                "PLATFORMIO=60103",
                 "ARDUINO_ARDUINO_NANO33BLE",
                 "ARDUINO_ARCH_NRF52840",
                 "ARM_MATH_CM4",
@@ -135,13 +135,12 @@
                 "DEVICE_TRNG=1",
                 "DEVICE_USBDEVICE=1",
                 "DEVICE_USTICKER=1",
-                "DEVICE_WATCHDOG=1",
                 "FEATURE_BLE=1",
                 "FEATURE_CRYPTOCELL310=1",
                 "FEATURE_STORAGE=1",
                 "__FPU_PRESENT=1",
                 "__MBED__=1",
-                "MBED_BUILD_TIMESTAMP=1652255892.88627",
+                "MBED_BUILD_TIMESTAMP=1648633245.220674",
                 "__MBED_CMSIS_RTOS_CM",
                 "MBED_MPU_CUSTOM",
                 "MBED_TICKLESS",
@@ -173,7 +172,7 @@
                 "WSF_MAX_HANDLERS=10",
                 "MBED_NO_GLOBAL_USING_DIRECTIVE=1",
                 "CORE_MAJOR=3",
-                "CORE_MINOR=1",
+                "CORE_MINOR=0",
                 "CORE_PATCH=1",
                 "USE_ARDUINO_PINOUT",
                 "ARDUINO=10810",

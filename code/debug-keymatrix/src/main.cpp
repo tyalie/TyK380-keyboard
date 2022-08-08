@@ -102,12 +102,12 @@ bool read_pins(uint8_t arr[ROWS_SIZE][COLS_SIZE]) {
 
 void print_matrix(uint8_t arr[ROWS_SIZE][COLS_SIZE]) {
   mprintf("    ");
-  for (size_t j = 1; j <= COLS_SIZE; j++)
+  for (size_t j = 0; j < COLS_SIZE; j++)
     mprintf("%#2u ", j);
   mprintf("\n");
 
   for (size_t i = 0; i < ROWS_SIZE; i++) {
-    mprintf("%#2u: ", i + 1);
+    mprintf("%#2u: ", i);
     for (size_t j = 0; j < COLS_SIZE; j++) {
       char c = '?';
       if (arr[i][j] == HIGH)
@@ -128,7 +128,7 @@ void print_matrix_short(uint8_t arr[ROWS_SIZE][COLS_SIZE]) {
   for (size_t i = 0; i < ROWS_SIZE; i++) {
     for (size_t j = 0; j < COLS_SIZE; j++) {
       if (arr[i][j] == LOW) {
-        mprintf("Hit: %2u / %2u\n", i + 1, j + 1);
+        mprintf("Hit: %2u / %2u\n", i, j);
       }
     }
   }
