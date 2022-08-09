@@ -2,7 +2,7 @@ include <components.scad>
 
 $fn=30;
 pcb_height=1.7;
-pcb_depth=38;
+pcb_depth=36;  // min is 35
 
 module pcb_base(thickness) {
   linear_extrude(height=thickness, center=false, convexity=10) {
