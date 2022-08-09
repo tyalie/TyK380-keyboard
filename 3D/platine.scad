@@ -7,8 +7,8 @@ pcb_depth=38;
 module pcb_base(thickness) {
   linear_extrude(height=thickness, center=false, convexity=10) {
     difference() {
-      import (file="../../reverse-engineering/pcb-cad.dxf", layer="outline");
-      import (file="../../reverse-engineering/pcb-cad.dxf", layer="details");
+      import (file="pcb-cad.dxf", layer="outline");
+      import (file="pcb-cad.dxf", layer="details");
     }
   }
 }
