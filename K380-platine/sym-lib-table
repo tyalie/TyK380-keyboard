@@ -1,4 +1,4 @@
 (sym_lib_table
-  (lib (name custom_footprints)(type Legacy)(uri ${KIPRJMOD}/lib/custom_footprints.lib)(options "")(descr ""))
-  (lib (name LibraryLoader)(type Legacy)(uri ${KIPRJMOD}/lib/libload/LibraryLoader.lib)(options "")(descr ""))
+  (lib (name "custom_footprints")(type "KiCad")(uri "${KIPRJMOD}/lib/custom_footprints.kicad_sym")(options "")(descr ""))
+  (lib (name "LibraryLoader")(type "KiCad")(uri "${KIPRJMOD}/lib/libload/LibraryLoader.kicad_sym")(options "")(descr ""))
 )
