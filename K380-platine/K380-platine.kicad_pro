@@ -33,9 +33,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.762,
-          "height": 1.524,
-          "width": 1.524
+          "drill": 0.0,
+          "height": 1.6,
+          "width": 1.1
         },
         "silk_line_width": 0.12,
         "silk_text_italic": false,
@@ -457,6 +457,11 @@
     "subpart_first_id": 65,
     "subpart_id_separator": 0
   },
-  "sheets": [],
+  "sheets": [
+    [
+      "c04386e0-b49e-4fff-b380-675af13a62cb",
+      ""
+    ]
+  ],
   "text_variables": {}
 }
