@@ -1,4 +1,5 @@
 height_MDT420E02001=4.2;  // MDT420E02001
+height_MDT245E02001=1.8;  // MDT245E02001
 height_MDT180E02001=1.8;  // MDT180E02001
 
 module m2_micromod(height) {
