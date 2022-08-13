@@ -32,7 +32,7 @@ module populated_pcb(thickness, depth) {
   // pcb components
   translate([7.5, -22, 0]) {
     rotate([0,0,-90]) {
-      m2_micromod(height_MDT245E02001);
+      m2_micromod(height_MDT275E02001);
     }
   }
 
