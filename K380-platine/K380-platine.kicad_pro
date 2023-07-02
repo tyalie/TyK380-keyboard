@@ -389,7 +389,6 @@
         "microvia_drill": 0.2,
         "name": "Power",
         "nets": [
-          "V3.3",
           "VBAT",
           "VUSB"
         ],
