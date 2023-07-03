@@ -33,7 +33,7 @@ a few more LED colors, the mod is essentially indistinguishable from the outside
 The only part of the mod, that requires a bit more effort besides potentially
 soldering the PCB, is the drilling on the case for the USB-C port. In my first
 revisions also integrated a completely oversized Li-Ion battery which didn't fit into
-the battery bay without some subtracting manufacturing.
+the battery bay without some subtractive manufacturing.
 
 
 ### Features
