@@ -55,3 +55,13 @@ ghosting. In normal use one doesn't really notice that, as the vendor firmware o
 supports three key presses at a time and the key matrix traces are routed all over
 the place, so that common key combinations won't result in ghost key presses.
 
+
+## Contributing
+
+Before you start editing the hardware here, you should install the [marbastlib
+plugin](https://github.com/ebastler/marbastlib) into your KiCad. It contains the
+footprints and 3D models for the HolyIoT board.
+
+Otherwise, feel free to go. But if you want to contribute anything to the main
+hardware, please open an issue first. I'm currently a bit unsure how collaboration
+could work with KiCad projects as merging changes isn't really trivial here.
