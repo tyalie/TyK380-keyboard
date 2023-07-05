@@ -117,21 +117,21 @@
         "allow_blind_buried_vias": false,
         "allow_microvias": false,
         "max_error": 0.005,
-        "min_clearance": 0.0,
+        "min_clearance": 0.09,
         "min_connection": 0.0,
         "min_copper_edge_clearance": 0.09999999999999999,
-        "min_hole_clearance": 0.25,
-        "min_hole_to_hole": 0.25,
+        "min_hole_clearance": 0.254,
+        "min_hole_to_hole": 0.5,
         "min_microvia_diameter": 0.19999999999999998,
         "min_microvia_drill": 0.09999999999999999,
         "min_resolved_spokes": 2,
         "min_silk_clearance": 0.0,
         "min_text_height": 0.7999999999999999,
         "min_text_thickness": 0.08,
-        "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.19999999999999998,
-        "min_via_annular_width": 0.049999999999999996,
-        "min_via_diameter": 0.39999999999999997,
+        "min_through_hole_diameter": 0.19999999999999998,
+        "min_track_width": 0.09,
+        "min_via_annular_width": 0.125,
+        "min_via_diameter": 0.44999999999999996,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
@@ -177,6 +177,8 @@
       ],
       "track_widths": [
         0.0,
+        0.09,
+        0.127,
         0.25,
         0.4,
         0.6,
@@ -187,6 +189,14 @@
         {
           "diameter": 0.0,
           "drill": 0.0
+        },
+        {
+          "diameter": 0.45,
+          "drill": 0.2
+        },
+        {
+          "diameter": 0.5,
+          "drill": 0.3
         },
         {
           "diameter": 0.8,
@@ -426,7 +436,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.127,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -434,6 +444,40 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "Default",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.25,
+        "via_diameter": 0.8,
+        "via_drill": 0.4,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Keymatrix Data",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.25,
+        "via_diameter": 0.8,
+        "via_drill": 0.4,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.127,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Keymatrix Read",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.25,
@@ -472,6 +516,14 @@
       {
         "netclass": "Power",
         "pattern": "VUSB"
+      },
+      {
+        "netclass": "Keymatrix Read",
+        "pattern": "COL*"
+      },
+      {
+        "netclass": "Keymatrix Data",
+        "pattern": "ROW*"
       }
     ]
   },
@@ -492,7 +544,7 @@
       "dashed_lines_dash_length_ratio": 12.0,
       "dashed_lines_gap_length_ratio": 3.0,
       "default_line_thickness": 6.0,
-      "default_text_size": 39.0,
+      "default_text_size": 55.0,
       "field_names": [],
       "intersheets_ref_own_page": false,
       "intersheets_ref_prefix": "",
@@ -534,10 +586,6 @@
     [
       "c04386e0-b49e-4fff-b380-675af13a62cb",
       ""
-    ],
-    [
-      "95ce5e12-aece-424b-9454-7951565ef350",
-      "CPU"
     ]
   ],
   "text_variables": {}
